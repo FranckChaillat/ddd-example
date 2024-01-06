@@ -32,6 +32,8 @@ class StatisticsServiceTest extends AnyFlatSpec with ScalaFutures {
              .copy(status = TaskStatus.TODO)
     )
 
+    println("test")
+
     val taskAEventList: List[entities.TaskEvent] = List(
       Creation(Instant.ofEpochMilli(1677298993302L), "dummyTaskBoardA".sha1.hex, "Francky"),
       StatusChange(
